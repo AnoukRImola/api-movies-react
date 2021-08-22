@@ -14,12 +14,11 @@ const Section = () => {
     
     },[])
 
-    const url= ["https://image.tmdb.org/t/p/original/iCi4c4FvVdbaU1t8poH1gvzT6xM.jpg", "https://image.tmdb.org/t/p/original/9dKCd55IuTT5QRs989m9Qlb7d2B.jpg", "https://image.tmdb.org/t/p/original/acCS12FVUQ7blkC8qEbuXbsWEs2.jpg"]
 
     return ( 
         <div>
             <h1>Hola</h1>
-            {film.map(item=> <Card title={item.original_title} url={item.url}/>)}
+            {film.map(item=> <Card title={item.original_title} url={item.backdrop_path}/>)}
 
         </div>
      );
