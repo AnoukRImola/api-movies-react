@@ -16,10 +16,8 @@ const Section = () => {
 
 
     return ( 
-        <div>
-            <h1>Hola</h1>
-            {film.map(item=> <Card title={item.original_title} url={item.backdrop_path}/>)}
-
+        <div className="section">
+            {film.map(item=> <Card title={item.original_title} url={item.poster_path} date={item.release_date}/>)}
         </div>
      );
 }

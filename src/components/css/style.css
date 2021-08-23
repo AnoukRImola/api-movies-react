@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #191C1E;
+}
+
+.nav{
+    background-color: #F83645;
+    padding: 1rem;
+}
+
+.nav a{
+    background-color: #F83645;
+    color: whitesmoke;
+
+}
+
+.section{
+    display: flex;
+    flex-flow: row wrap;
+}
+
