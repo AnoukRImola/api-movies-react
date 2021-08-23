@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/style.css";
 
 function Navbar() {
@@ -5,13 +6,13 @@ function Navbar() {
         <div>
             <ul className="nav justify-content-center">
                 <li className="nav-item">
-                    <a className="nav-link active" href="./">Películas</a>
+                 <Link to="/">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="./">Programas</a>
+                <Link to="/peliculas">Películas</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="./">Más</a>
+                <Link to="/programas">Programas</Link>
                 </li>
              </ul>
         </div>
