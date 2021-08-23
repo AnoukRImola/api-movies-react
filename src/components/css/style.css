@@ -1,22 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    background: #191C1E;
+    background: #222A31;
 }
 
+/*Navbar*/
 .nav{
-    background-color: #F83645;
+    background-color: #FE424F;
     padding: 1rem;
 }
 
-.nav a{
-    background-color: #F83645;
-    color: whitesmoke;
-
+.nav li{
+    padding: 0 2rem;
+    border-right: 1px solid white;
+    background-color: #FE424F;
 }
 
+.nav a{
+    background-color: #FE424F;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav a:hover{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/*Section*/
 .section{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    margin: 2rem;
 }
+
+/*Card*/
+.card{
+    margin: 1rem;    
+    cursor: pointer;
+}
+
+
 

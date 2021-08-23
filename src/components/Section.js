@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
+import "./css/style.css";
 
 
 const Section = () => {

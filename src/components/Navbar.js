@@ -7,7 +7,7 @@ function Navbar() {
                 <li className="nav-item">
                     <a className="nav-link active" href="./">Películas</a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item">
                     <a className="nav-link" href="./">Programas</a>
                 </li>
                 <li className="nav-item">
