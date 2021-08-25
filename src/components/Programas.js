@@ -1,12 +1,20 @@
+import { StarFill } from 'react-bootstrap-icons';
 
-const Programas = () => {
+const Programas = (props) => {
     return (  
-        <div className="media">
-        <img src="..." className="mr-3" alt="..." />
-        <div className="media-body">
-            <h5 className="mt-0">Media heading</h5>
-            <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-        </div>
+        <div className="card border-0" style={{width: "15rem"}}>
+            <img src={"https://image.tmdb.org/t/p/original" + props.urlP} className="card-img-top" alt="..." />
+            <div className="card-body px-0">
+                <h5 className="card-title text-white">{props.titleP}</h5>
+                <div className="row">
+                    <div className="col-9">
+                    <p className="card-text text-info m-0">{props.dateP}</p>
+                    </div>
+                    <div className="col-3">
+                    <p className="card-text text-warning"><StarFill className="star"/> {props.ratingP}</p>  
+                    </div>
+                </div>          
+            </div>
         </div>
     );
 }

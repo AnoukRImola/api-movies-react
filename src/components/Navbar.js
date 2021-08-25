@@ -14,7 +14,10 @@ function Navbar() {
                 <li className="nav-item">
                 <Link to="/programas">Programas</Link>
                 </li>
-             </ul>
+                <li className="nav-item">
+                <Link to="/personas">Personas</Link>
+               </li>
+            </ul>
         </div>
     )
 }

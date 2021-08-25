@@ -45,5 +45,8 @@
     cursor: pointer;
 }
 
-
+.star{
+    font-size: 0.9rem;
+    padding-bottom: 2px;
+}
 

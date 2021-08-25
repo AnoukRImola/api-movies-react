@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import Inicio from "./components/Inicio";
-import Programas from "./components/Programas";
+import SectionPersonas from "./components/SectionPersonas";
+import SectionProgram from "./components/SectionProgram";
 
 
 //azucar sintactico: JSX => JS + HTML/XML
@@ -24,7 +25,10 @@ function App() {
           <Section />
           </Route>
           <Route exact path="/programas">
-          <Programas/>
+          <SectionProgram/>
+          </Route>
+          <Route exact path="/personas">
+          <SectionPersonas/>
           </Route>
         </Switch>
       
