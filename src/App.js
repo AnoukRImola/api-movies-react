@@ -21,14 +21,17 @@ function App() {
           <Route exact path="/">
             <Inicio />
           </Route>
+
           <Route exact path="/peliculas">
-          <Section />
+            <Section />
           </Route>
+
           <Route exact path="/programas">
-          <SectionProgram/>
+            <SectionProgram/>
           </Route>
+
           <Route exact path="/personas">
-          <SectionPersonas/>
+            <SectionPersonas/>
           </Route>
         </Switch>
       
