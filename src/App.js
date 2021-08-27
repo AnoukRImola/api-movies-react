@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Section from "./components/Section";
-import Inicio from "./components/Inicio";
-import SectionPersonas from "./components/SectionPersonas";
-import SectionProgram from "./components/SectionProgram";
+import Section from "./views/Section";
+import Inicio from "./views/Inicio";
+import SectionPersonas from "./views/SectionPersonas";
+import SectionProgram from "./views/SectionProgram";
 
 
 //azucar sintactico: JSX => JS + HTML/XML

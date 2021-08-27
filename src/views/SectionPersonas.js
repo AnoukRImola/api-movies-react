@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Personas from './Personas';
+import Personas from '../components/Personas';
 
 
 const SectionPersonas = () => {

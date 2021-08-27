@@ -1,5 +1,5 @@
 import { StarFill } from 'react-bootstrap-icons';
-import "./css/style.css";
+import "../assets/css/style.css"
 
 const Card = (props) => {
 

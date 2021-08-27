@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Card from './Card';
-import "./css/style.css";
+import Card from '../components/Card';
+import "../assets/css/style.css"
 
 
 const Section = () => {

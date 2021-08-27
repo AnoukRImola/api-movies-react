@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Programas from './Programas';
+import Programas from '../components/Programas';
 
 const SectionProgram = () => {
 

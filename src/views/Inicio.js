@@ -1,6 +1,6 @@
-import avengers from "./img/avengers.jpg";
-import ca from "./img/ca.jpg";
-import xmen from "./img/xmen.jpg";
+import avengers from "../assets/img/avengers.jpg"
+import ca from "../assets/img/ca.jpg";
+import xmen from "../assets/img/xmen.jpg";
 
 
 const Inicio = () => {
