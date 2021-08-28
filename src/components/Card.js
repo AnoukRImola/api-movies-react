@@ -11,10 +11,10 @@ const Card = (props) => {
                     <h5 className="card-title text-white">{props.title}</h5>
                     <div className="row">
                         <div className="col-9">
-                        <p className="card-text text-info m-0">{props.date}</p>
+                        <p className="card-text text-secondary m-0">{props.date}</p>
                         </div>
                         <div className="col-3">
-                        <p className="card-text text-warning"><StarFill className="star"/> {props.rating}</p>  
+                        <p className="card-text text-danger"><StarFill className="star"/> {props.rating}</p>  
                         </div>
                      </div>           
                 </div>

@@ -4,6 +4,7 @@ import "../assets/css/style.css"
 function Navbar() {
     return(
         <div>
+            
             <ul className="nav justify-content-center">
                 <li className="nav-item">
                  <Link to="/">Inicio</Link>
