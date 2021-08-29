@@ -14,7 +14,7 @@ const Card = (props) => {
                         <p className="card-text text-secondary m-0">{props.date}</p>
                         </div>
                         <div className="col-3">
-                        <p className="card-text text-danger"><StarFill className="star"/> {props.rating}</p>  
+                        <p className="card-text text-info"><StarFill className="star"/> {props.rating}</p>  
                         </div>
                      </div>           
                 </div>
