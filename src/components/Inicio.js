@@ -1,9 +1,8 @@
-import avengers from "../assets/img/avengers.jpg"
-import ca from "../assets/img/ca.jpg";
-import xmen from "../assets/img/xmen.jpg";
 
+const Inicio = (props) => {
 
-const Inicio = () => {
+    const {carrusel} = props;
+
     return ( 
         
          <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
@@ -13,27 +12,11 @@ const Inicio = () => {
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                <img src={avengers} className=" w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                   
-                    
-                </div>
-            </div>
-            <div classNameName="carousel-item">
-                <img src={ca} className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                   
-                    
-                </div>
-            </div>
-            <div className="carousel-item">
-                <img src={xmen} className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                   
-                    
-                </div>
-             </div>
+                {carrusel.map((item=> <div className="carousel-item active">
+                <img src={"https://image.tmdb.org/t/p/original" + carrusel[0].backdrop_path} className=" w-100" alt="..." />
+                </div>))}
+                
+                
             </div> 
                 <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

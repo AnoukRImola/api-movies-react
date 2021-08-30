@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Section from "./views/Section";
-import Inicio from "./views/Inicio";
+import SectionInicio from "./views/SectionInicio";
 import SectionPersonas from "./views/SectionPersonas";
 import SectionProgram from "./views/SectionProgram";
 
@@ -19,7 +19,7 @@ function App() {
       <Navbar/>
         <Switch>
           <Route exact path="/">
-            <Inicio />
+            <SectionInicio />
           </Route>
 
           <Route exact path="/peliculas">

@@ -8,18 +8,18 @@
 
 /*Navbar*/
 .nav{
-    background-color: #1C1E22;
+    background-color: #2b2b31;
     padding: 3rem;
     border-bottom: 1px solid gray;
 }
 
 .nav li{
     padding: 0 1rem;
-    background-color: #1C1E22;
+    background-color: #2b2b31;
 }
 
 .nav a{
-    background-color: #1C1E22;
+    background-color: #2b2b31;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
