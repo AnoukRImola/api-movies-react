@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import PeliculaDetalle from "./components/PeliculaDetalle";
 import Section from "./views/Section";
 import SectionInicio from "./views/SectionInicio";
 import SectionPersonas from "./views/SectionPersonas";
@@ -24,6 +25,9 @@ function App() {
 
           <Route exact path="/peliculas">
             <Section />
+          </Route>
+          <Route exact path="/peliculas/:id">
+            <PeliculaDetalle/>
           </Route>
 
           <Route exact path="/programas">

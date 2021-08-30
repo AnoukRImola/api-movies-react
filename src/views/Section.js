@@ -17,7 +17,7 @@ const Section = () => {
 
     return ( 
         <div className="section">
-            {film.map(item=> <Card title={item.original_title} url={item.poster_path} date={item.release_date} rating={item.vote_average}/>)};
+            {film.map(item=> <Card title={item.original_title} url={item.poster_path} date={item.release_date} rating={item.vote_average} id={item.id}/>)};
         </div>
      );
 }
