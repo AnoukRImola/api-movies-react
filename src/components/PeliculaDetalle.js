@@ -14,13 +14,20 @@ const PeliculaDetalle = () => {
     console.log(peliculaDetalles)
 
     return ( 
-        <div className="jumbotron">
-  <h1 className="display-4">{peliculaDetalles.title}</h1>
-  <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr className="my-4"/>
-  <p>It uses utility classNamees for typography and spacing to space content out within the larger container.</p>
-  <a className="btn btn-primary btn-lg" href="/" role="button">Learn more</a>
-</div>
+        <div className="container-fluid p-0 details">
+            <div className="details-card">
+                <div className="row fila">
+                     <div className="col">
+                     <img src={"https://image.tmdb.org/t/p/original" + peliculaDetalles.poster_path} className="card-img-top" alt="..." />
+                     </div>
+                     <div className="col">
+                        <h1>{peliculaDetalles.title}</h1>
+                     </div>
+                </div>
+
+            </div>
+            
+        </div>
      );
 }
  

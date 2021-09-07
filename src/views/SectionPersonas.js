@@ -13,6 +13,7 @@ const SectionPersonas = () => {
         .then(data =>  {setPeople(data.results)});
     
     },[])
+
     
     return ( 
         <div className="section">
