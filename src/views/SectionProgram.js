@@ -14,7 +14,7 @@ const SectionProgram = () => {
 
     return ( 
         <div className="section">
-            {programa.map(item=> <Programas titleP={item.original_name} urlP={item.poster_path} dateP={item.first_air_date} ratingP={item.vote_average} /> )}
+            {programa.map(item=> <Programas titleP={item.original_name} urlP={item.poster_path} dateP={item.first_air_date} ratingP={item.vote_average} id={item.id} /> )}
         </div>    
      );
 }
