@@ -21,7 +21,10 @@ const ProgramaDetalle = () => {
                      <img src={"https://image.tmdb.org/t/p/original" + programaDetalles.poster_path} className="card-img-top" alt="..." />
                      </div>
                      <div className="col">
-                        <h1>{programaDetalles.title}</h1>
+                        <h1>{programaDetalles.name}</h1>
+                        <p>Temporadas: {programaDetalles.number_of_seasons} </p>
+                        <p>Episodios: {programaDetalles.number_of_episodes} </p>
+                        <p>{programaDetalles.overview} </p>
                      </div>
                 </div>
 
