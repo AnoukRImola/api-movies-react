@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PeliculaDetalle from "./components/PeliculaDetalle";
 import ProgramaDetalle from "./components/ProgramaDetalle";
+import NotFound from "./components/NotFound";
 import Section from "./views/Section";
 import SectionInicio from "./views/SectionInicio";
 import SectionPersonas from "./views/SectionPersonas";
@@ -40,6 +41,10 @@ function App() {
 
           <Route exact path="/personas">
             <SectionPersonas/>
+          </Route>
+
+          <Route exact path="*">
+            <NotFound/>
           </Route>
         </Switch>
       
