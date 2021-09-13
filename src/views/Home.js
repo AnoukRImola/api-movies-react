@@ -5,7 +5,7 @@ import SectionPopular from './SectionPopular';
 import SectionProximas from './SectionProximas';
 
 
-const SectionInicio = () => {
+const Home = () => {
 
 
     return ( 
@@ -19,4 +19,4 @@ const SectionInicio = () => {
      );
 }
  
-export default SectionInicio;
+export default Home;

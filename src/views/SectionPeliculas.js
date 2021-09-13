@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../components/Card';
+import Card from '../components/Peliculas';
 import "../assets/css/style.css"
 
 
-const Section = () => {
+const SectionPeliculas = () => {
 
     const [film, setFilm] = useState([]);
     console.log(film);
@@ -22,4 +22,4 @@ const Section = () => {
      );
 }
  
-export default Section;
+export default SectionPeliculas;
