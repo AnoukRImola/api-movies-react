@@ -14,18 +14,22 @@ const PeliculaDetalle = () => {
     console.log(peliculaDetalles)
 
     return ( 
-        <div className="container-fluid p-0 details">
-            <div className="details-card">
-                <div className="row fila">
-                     <div className="col">
-                     <img src={"https://image.tmdb.org/t/p/original" + peliculaDetalles.poster_path} className="card-img-top" alt="..." />
-                     </div>
-                     <div className="col">
-                        <h1>{peliculaDetalles.title}</h1>
-                        <p>{peliculaDetalles.overview} </p>
-                     </div>
-                </div>
-
+        <div classNameName="container p-0 mt-5" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+            <div className="card mb-3 bg-transparent" style={{maxWidth: "78vw"}} >
+                <div className="row no-gutters">
+                    <div className="col-md-4">
+                    <img src={"https://image.tmdb.org/t/p/original" + peliculaDetalles.poster_path} className="card-img-top" alt="..." />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                          <h1>{peliculaDetalles.title}</h1>
+                          <p>{peliculaDetalles.overview} </p>
+                          <p>{peliculaDetalles.original_language} </p>
+                          <p>{peliculaDetalles.release_date} </p>
+                          <p>{peliculaDetalles.runtime} </p>
+                        </div>
+                    </div>
+               </div>
             </div>
             
         </div>
