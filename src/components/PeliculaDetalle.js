@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Clock, Eye, Star } from 'react-bootstrap-icons';
+import {Link} from "react-router-dom";
 
 const PeliculaDetalle = () => {
     const {id} = useParams();
@@ -32,6 +33,9 @@ const PeliculaDetalle = () => {
                           <p><kbd><Clock className="bi bi-clock-fill"/></kbd> {peliculaDetalles.runtime} </p>
                           <p><kbd><Eye className="bi bi-eye-fill"/></kbd> {peliculaDetalles.popularity} </p>
                           <p><kbd><Star className="bi bi-star-fill"/></kbd> {peliculaDetalles.vote_average} </p>
+                          <div className="d-flex justify-content-end">
+                           <Link to="/peliculas"> <button type="button" class="btn btn-outline-light">Atrás</button></Link>
+                          </div>
                         </div>
                     </div>
                </div>

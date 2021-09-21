@@ -10,10 +10,12 @@ const Home = () => {
 
     return ( 
         <div className="section">
-           
-            <SectionPopular/>
-            <h2>PROXIMAS</h2>
+            <h2 className="h1 text-white">Próximas</h2>
             <SectionProximas />
+            <h2 className="h1 text-white">Populares</h2>
+            <SectionPopular/>
+            
+            
         </div>
         
      );

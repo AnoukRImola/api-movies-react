@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Eye, Star } from 'react-bootstrap-icons';
+import {Link} from "react-router-dom";
 
 const ProgramaDetalle = () => {
     const {id} = useParams();
@@ -34,6 +35,9 @@ const ProgramaDetalle = () => {
                           <p><kbd>Episodios:</kbd> {programaDetalles.number_of_episodes} </p>
                           <p><kbd><Eye className="bi bi-eye-fill"/></kbd> {programaDetalles.vote_count} </p>
                           <p><kbd><Star className="bi bi-star-fill"/></kbd> {programaDetalles.vote_average} </p>
+                          <div className="d-flex justify-content-end">
+                           <Link to="/programas"> <button type="button" class="btn btn-outline-light">Atrás</button></Link>
+                          </div>
                         </div>
                     </div>
                </div>

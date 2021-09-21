@@ -3,26 +3,13 @@ import "../assets/css/style.css"
 
 function Navbar() {
     return(
-        <div>
-            <nav className="navbar navbar-expand-lg ">
-             <Link to="/" className="navbar-brand">Inicio</Link>
-                    <button classNameName="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                    <li className="nav-item active">
-                    <Link to="/peliculas">Películas </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/programas">Programas</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/personas">Personas</Link>
-                    </li>
-                     </ul>
-                </div>
-            </nav>  
+        <div className="nav d-flex justify-content-center align-items-center">
+           <ul className="d-flex list-unstyled ">
+          <Link to="/" style={{ textDecoration: 'none' }}><li>Inicio</li></Link> 
+          <Link to="/peliculas" style={{ textDecoration: 'none' }}><li>Películas</li></Link>
+          <Link to="/programas" style={{ textDecoration: 'none' }}><li>Tv Shows</li></Link>
+          <Link to="personas" style={{ textDecoration: 'none' }}><li>Actores</li></Link>
+           </ul>
         </div>
     )
 }
