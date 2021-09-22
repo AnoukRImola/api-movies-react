@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Peliculas';
 import "../assets/css/style.css"
 
-
 const SectionPeliculas = () => {
 
     const [film, setFilm] = useState([]);
