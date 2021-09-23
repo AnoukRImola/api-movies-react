@@ -2,8 +2,8 @@ import {Carousel} from 'react-bootstrap';
 
 const Carrusel = (props) => {
 
-    const{imagenCarrusel} = props;
-    console.log(props);
+     const{imagenCarrusel} = props;
+     console.log(props);
 
     return ( 
         <Carousel style={{height: "40rem"}} fade>
@@ -17,10 +17,10 @@ const Carrusel = (props) => {
             />
            
             
-            <Carousel.Caption>
+            {/* <Carousel.Caption>
                 <h3 className="text-white">First slide label</h3>
                 <p>blabla.</p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
         </Carousel.Item>
 
         <Carousel.Item>
@@ -30,10 +30,10 @@ const Carrusel = (props) => {
                 src={"https://image.tmdb.org/t/p/original/dsdbViTNjLu4DbgkkYmuY4xDQ20.jpg"}
                 alt="Second slide"
             />
-            <Carousel.Caption>
+            {/* <Carousel.Caption>
                 <h3 className="text-white">Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
         </Carousel.Item>
 
         <Carousel.Item>
@@ -44,7 +44,7 @@ const Carrusel = (props) => {
                 alt="Third slide"
             />
             <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>vvv</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
         </Carousel.Item>

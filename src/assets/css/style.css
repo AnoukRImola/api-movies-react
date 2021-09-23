@@ -39,4 +39,41 @@ li{
     padding-bottom: 2px;
 }
 
+.section-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 5rem;
+}
 
+.scroll-container{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    position: relative;
+    width: 70vw;
+}
+
+.scroll-item{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.scroll-container::-webkit-scrollbar{
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 4px;
+}
+
+.section-scroll h2{
+    color: white;
+}

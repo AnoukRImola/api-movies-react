@@ -2,11 +2,7 @@ import { Link} from 'react-router-dom';
 import { StarFill } from 'react-bootstrap-icons';
 import "../assets/css/style.css"
 
-
-
 const Card = (props) => {
-
-    
 
     return ( 
         <div>
@@ -15,10 +11,10 @@ const Card = (props) => {
                 <div className="card-body px-0">
                    <Link to={"/peliculas/"+props.id}><h5 className="card-title text-white">{props.title}</h5></Link> 
                     <div className="row">
-                        <div className="col-9">
+                        <div className="col-8">
                         <p className="card-text text-secondary m-0">{props.date}</p>
                         </div>
-                        <div className="col-3">
+                        <div className="col-4">
                         <p className="card-text text-info"><StarFill className="star"/> {props.rating}</p>  
                         </div>
                      </div>           
