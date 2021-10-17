@@ -10,6 +10,7 @@ import SectionPersonas from "./views/SectionPersonas";
 import SectionProgram from "./views/SectionProgram";
 
 
+
 //azucar sintactico: JSX => JS + HTML/XML
 
 function App() {
