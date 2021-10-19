@@ -12,7 +12,7 @@ const Card = (props) => {
                    <Link to={"/peliculas/"+props.id}><h5 className="card-title text-white">{props.title}</h5></Link> 
                     <div className="row">
                         <div>
-                            <p className="card-text text-secondary">{props.date}</p>
+                            <p className="card-text text-secondary pl-3">{props.date}</p>
                         </div>
                     </div>
 
