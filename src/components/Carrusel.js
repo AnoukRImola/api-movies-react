@@ -17,14 +17,16 @@ const Carrusel = (props) => {
         <div className="carrusel">
             <div id="carouselExampleCaptions" className="carousel slide mb-5" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    {imagenCarrusel.map((item,index)=>
-                    index ===0?
-                    <div className="carousel-item active">
-                        <img src={'https://image.tmdb.org/t/p/w500'+item.backdrop_path} className="d-block w-100" alt="..." />
-                    </div>:
-                    <div className="carousel-item">
+                    
+                    
+                    {/* <div className="carousel-item active">
+                    
+                        <img src={'https://image.tmdb.org/t/p/w500'+imagenCarrusel.backdrop_path} className="d-block w-100" alt="..." />
+                    </div> */}
+                    {imagenCarrusel.length> 0 ? imagenCarrusel.map((item=>
+                     <div className="carousel-item">
                         <img src={'https://image.tmdb.org/t/p/w500'+item.backdrop_path}  className="d-block w-100" alt="..." />
-                    </div>)}
+                     </div> )):null}
                 </div> 
             
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

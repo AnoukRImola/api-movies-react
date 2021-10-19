@@ -5,14 +5,14 @@ import "../assets/css/style.css"
 const SectionPeliculas = () => {
 
     const [film, setFilm] = useState([]);
-    console.log(film);
 
     useEffect(()=>{
         fetch('https://api.themoviedb.org/3/movie/popular?api_key=d6090b4ce2a41ad46da7767f56682434')
         .then(response => response.json())
         .then(data =>  {setFilm(data.results)});
-    
+
     },[])
+    console.log(film);
     
     return ( 
         <div className="section">
