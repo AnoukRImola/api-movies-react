@@ -79,3 +79,8 @@ li{
 .section-scroll h2{
     color: white;
 }
+
+.home h1{
+    color: white;
+    margin-left: 5rem;
+}

@@ -15,10 +15,9 @@ const SectionProximas = () => {
 
     return ( 
         <div className="section-scroll">
-            <h2>Próximas</h2>
-        <div className="scroll-container">
-            {proximas.map(item=> <Proximas title={item.title} url={item.poster_path}/>)};
-        </div>
+            <div className="scroll-container">
+                 {proximas.map(item=> <Proximas title={item.title} url={item.poster_path}/>)};
+            </div>
         </div>
      );
 }

@@ -17,10 +17,9 @@ const SectionPopular = () => {
 
     return ( 
         <div className="section-scroll">
-            <h2>Populares</h2>
-        <div className="scroll-container">
-            {popular.map(item=> <Popular title={item.title} url={item.poster_path}/>)};
-        </div>
+            <div className="scroll-container">
+              {popular.map(item=> <Popular title={item.title} url={item.poster_path}/>)};
+            </div>
         </div>
      );
 }
