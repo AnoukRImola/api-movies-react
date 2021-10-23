@@ -7,16 +7,13 @@
 }
 
 /*Navbar*/
-.nav{
-    background: #FE424F;
-    height: 5rem;
+.navbar{
+    height: 6rem;
 }
 
-li{
-    padding: 0.5rem;
-    background: #FE424F;
-    color: white;
-    text-decoration: none;
+#navbarNavDropdown{
+    display: flexbox;
+    justify-content: center;
 }
 
 
